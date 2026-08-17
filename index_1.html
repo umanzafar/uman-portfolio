@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uman Zafar — GoHighLevel Systems Portfolio</title>
+<meta name="description" content="GoHighLevel automation systems, funnels and CRM builds by Uman Zafar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>
+/* ============================================================
+   EDIT EVERYTHING BELOW. NOTHING ELSE.
+   Save the file, refresh the browser. That is the whole workflow.
+   ============================================================ */
+
+const ME = {
+  name:        "Uman Zafar",
+  role:        "GoHighLevel CRM & Automation Specialist",
+  line:        "I build the system between the ad click and the booked appointment. Funnels, workflows, pipelines, Conversation AI, snapshots.",
+  location:    "Islamabad, Pakistan",
+  available:   "Available full time, night shift 5PM to 3AM",
+  whatsapp:    "+92 347 2576684",
+  email:       "umanzafar174@gmail.com",
+  linkedin:    "https://linkedin.com/in/umanzafar",
+  cvFile:      "Uman_Zafar_GHL_Expert_CV.pdf"   // put the PDF next to this file
+};
+
+/* Headline numbers. Delete any line you cannot defend in an interview. */
+const RESULTS = [
+  { figure: "£2.40",  label: "cost per lead",      note: "UK home services, Meta Ads" },
+  { figure: "50%",    label: "qualification rate", note: "same campaign" },
+  { figure: "21X",    label: "return on ad spend", note: "hospitality, Ramadan season" },
+  { figure: "8",      label: "GHL systems built",  note: "ad click to booked appointment" }
+];
+
+/* Your systems. Paste the normal Loom share link, it converts itself.
+   Leave loom as "" if a system has no video yet. */
+const SYSTEMS = [
+  {
+    title: "Dead Lead Reactivation",
+    tags:  ["Conversation AI", "SMS + Email", "Auto booking"],
+    body:  "Seven day multi channel sequence that wakes up cold leads. GHL Conversation AI reads the reply, handles the positive ones and books the appointment without a human touching it.",
+    loom:  "https://www.loom.com/share/PASTE_ID_HERE"
+  },
+  {
+    title: "Missed Call Text Back",
+    tags:  ["4 intent branches", "Auto tagging", "Rep tasks"],
+    body:  "Every missed call fires an instant SMS. The reply routes down one of four branches, repair, replacement, quote or other, tags the contact and drops a priority task on the right rep.",
+    loom:  ""
+  },
+  {
+    title: "Lead to Appointment Funnel",
+    tags:  ["Facebook Ads", "Nurture", "Reminders"],
+    body:  "Full path from Facebook ad submission to a confirmed booking, with a seven day nurture sequence and pre appointment reminders that cut no shows.",
+    loom:  ""
+  },
+  {
+    title: "CRM Infrastructure",
+    tags:  ["7 custom fields", "6 smart lists", "Dashboard"],
+    body:  "Custom fields, smart lists, pipeline hygiene automations and a reporting dashboard so the owner can see where every lead actually is.",
+    loom:  ""
+  },
+  {
+    title: "Review Request Sequence",
+    tags:  ["Post job", "Duplicate detection", "Escalation"],
+    body:  "Automated review collection after a job closes, with duplicate detection so nobody gets asked twice and escalation the moment a negative reply lands.",
+    loom:  ""
+  },
+  {
+    title: "Reusable Snapshot",
+    tags:  ["Deployed", "Sub account setup"],
+    body:  "Packaged the workflows, pipelines, custom fields and funnels into a snapshot and deployed it to a fresh sub account, so a new client goes live in an afternoon.",
+    loom:  ""
+  }
+];
+
+/* Your PDFs. Put the files in the same folder as this page. */
+const DOCS = [
+  { title: "System Architecture Deck",  note: "Full workflow maps and branching logic", file: "deck-1.pdf" },
+  { title: "Campaign Results Breakdown", note: "Meta Ads performance and lead quality",  file: "deck-2.pdf" },
+  { title: "Case Study",                 note: "One build end to end",                    file: "deck-3.pdf" },
+  { title: "CV",                         note: "One page",                                file: "Uman_Zafar_GHL_Expert_CV.pdf" }
+];
+
+/* ============================================================
+   STOP EDITING HERE.
+   ============================================================ */
+</script>
+
+<style>
+:root{
+  --ink:#0D1117;
+  --ink-2:#39424E;
+  --ink-3:#6B7684;
+  --canvas:#F6F7F9;
+  --node:#FFFFFF;
+  --line:#DCE1E8;
+  --accent:#4338CA;
+  --accent-soft:#EEEDFB;
+  --trigger:#C2740B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background-color:var(--canvas);
+  background-image:radial-gradient(var(--line) 1px, transparent 1px);
+  background-size:22px 22px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+
+/* the spine: this page is laid out like a GHL workflow canvas */
+.flow{position:relative;padding-left:34px}
+.flow::before{
+  content:"";position:absolute;left:9px;top:14px;bottom:60px;
+  width:2px;background:var(--line);
+}
+.node{position:relative;margin-bottom:22px}
+.node::before{
+  content:"";position:absolute;left:-30px;top:20px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--node);border:2px solid var(--line);
+}
+.node.is-trigger::before{background:var(--trigger);border-color:var(--trigger)}
+.node.is-end::before{background:var(--accent);border-color:var(--accent)}
+
+.kind{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:7px;display:block;
+}
+.card{
+  background:var(--node);border:1px solid var(--line);
+  border-radius:12px;padding:22px 24px;
+}
+
+/* hero */
+h1{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(30px,6.4vw,42px);font-weight:700;
+  letter-spacing:-.025em;line-height:1.05;
+}
+.role{
+  font-family:"JetBrains Mono",monospace;font-size:12.5px;
+  color:var(--accent);margin-top:9px;letter-spacing:.01em;
+}
+.lede{font-size:15.5px;color:var(--ink-2);margin-top:16px;max-width:52ch}
+.meta{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;
+  font-family:"JetBrains Mono",monospace;font-size:11px;
+}
+.chip{
+  border:1px solid var(--line);border-radius:100px;
+  padding:5px 11px;color:var(--ink-2);
+}
+.chip.live{border-color:var(--trigger);color:var(--trigger)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{
+  display:inline-block;text-decoration:none;font-size:13.5px;font-weight:500;
+  padding:11px 18px;border-radius:8px;transition:transform .12s ease,background .12s ease;
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#372DA8;transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink);background:var(--node)}
+.btn-ghost:hover{border-color:var(--ink-3);transform:translateY(-1px)}
+
+/* results */
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.stat{background:var(--node);padding:18px 20px}
+.stat b{
+  font-family:"Space Grotesk",sans-serif;font-size:26px;
+  font-weight:700;letter-spacing:-.02em;display:block;
+}
+.stat span{font-size:12.5px;color:var(--ink-2);display:block;margin-top:2px}
+.stat small{font-size:11px;color:var(--ink-3);display:block;margin-top:5px}
+
+/* systems */
+h2{
+  font-family:"Space Grotesk",sans-serif;font-size:19px;
+  font-weight:700;letter-spacing:-.015em;
+}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{
+  font-family:"JetBrains Mono",monospace;font-size:10.5px;
+  background:var(--accent-soft);color:var(--accent);
+  padding:3px 8px;border-radius:5px;
+}
+.card p{font-size:14.5px;color:var(--ink-2);margin-top:13px}
+.video{
+  position:relative;padding-bottom:56.25%;height:0;
+  margin-top:17px;border-radius:9px;overflow:hidden;background:#EDEFF3;
+}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.novideo{
+  margin-top:15px;font-family:"JetBrains Mono",monospace;font-size:11px;
+  color:var(--ink-3);border:1px dashed var(--line);border-radius:8px;
+  padding:13px;text-align:center;
+}
+
+/* docs */
+.doc{
+  display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+  padding:14px 16px;border:1px solid var(--line);border-radius:9px;
+  background:var(--node);margin-bottom:9px;transition:border-color .12s ease;
+}
+.doc:hover{border-color:var(--accent)}
+.doc:last-child{margin-bottom:0}
+.doc i{
+  font-style:normal;font-family:"JetBrains Mono",monospace;font-size:9.5px;
+  background:var(--ink);color:#fff;padding:5px 7px;border-radius:4px;flex-shrink:0;
+}
+.doc strong{font-size:14.5px;font-weight:600;display:block}
+.doc em{font-style:normal;font-size:12.5px;color:var(--ink-3);display:block}
+.doc s{margin-left:auto;text-decoration:none;color:var(--ink-3);font-size:17px}
+
+/* end */
+.end .card{background:var(--ink);border-color:var(--ink)}
+.end h2{color:#fff}
+.end p{color:#A9B2BF}
+.end .btn-primary{background:#fff;color:var(--ink)}
+.end .btn-primary:hover{background:#E6E8EC}
+.end .btn-ghost{background:transparent;border-color:#39424E;color:#fff}
+.end .btn-ghost:hover{border-color:#7B8595}
+
+a:focus-visible,.doc:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+@media (max-width:520px){
+  .wrap{padding:32px 15px 60px}
+  .flow{padding-left:24px}
+  .flow::before{left:5px}
+  .node::before{left:-25px}
+  .card{padding:19px 17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="flow" id="flow"></div></div>
+
+<script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// paste any loom link, share or embed, it works
+function loomEmbed(url){
+  if(!url || url.indexOf('PASTE_ID_HERE') > -1) return '';
+  const m = url.match(/loom\.com\/(?:share|embed)\/([a-zA-Z0-9]+)/);
+  return m ? 'https://www.loom.com/embed/' + m[1] : '';
+}
+
+function node(kind, html, cls){
+  return '<div class="node ' + (cls||'') + '"><span class="kind">' + kind + '</span>' + html + '</div>';
+}
+
+let out = '';
+
+// trigger
+out += node('Trigger', '<div class="card">' +
+  '<h1>' + esc(ME.name) + '</h1>' +
+  '<div class="role">' + esc(ME.role) + '</div>' +
+  '<p class="lede">' + esc(ME.line) + '</p>' +
+  '<div class="meta">' +
+    '<span class="chip">' + esc(ME.location) + '</span>' +
+    '<span class="chip live">' + esc(ME.available) + '</span>' +
+  '</div>' +
+  '<div class="actions">' +
+    '<a class="btn btn-primary" href="https://wa.me/' + ME.whatsapp.replace(/\D/g,'') + '">WhatsApp me</a>' +
+    '<a class="btn btn-ghost" href="' + esc(ME.cvFile) + '" target="_blank" rel="noopener">Download CV</a>' +
+    '<a class="btn btn-ghost" href="' + esc(ME.linkedin) + '" target="_blank" rel="noopener">LinkedIn</a>' +
+  '</div></div>', 'is-trigger');
+
+// results
+if(RESULTS.length){
+  out += node('Numbers', '<div class="results">' + RESULTS.map(r =>
+    '<div class="stat"><b>' + esc(r.figure) + '</b><span>' + esc(r.label) + '</span>' +
+    (r.note ? '<small>' + esc(r.note) + '</small>' : '') + '</div>').join('') + '</div>');
+}
+
+// systems
+SYSTEMS.forEach((s, i) => {
+  const src = loomEmbed(s.loom);
+  out += node('Action ' + String(i+1).padStart(2,'0'), '<div class="card">' +
+    '<h2>' + esc(s.title) + '</h2>' +
+    '<div class="tags">' + s.tags.map(t => '<span class="tag">' + esc(t) + '</span>').join('') + '</div>' +
+    '<p>' + esc(s.body) + '</p>' +
+    (src
+      ? '<div class="video"><iframe src="' + src + '" allowfullscreen title="' + esc(s.title) + ' walkthrough"></iframe></div>'
+      : '<div class="novideo">Walkthrough coming</div>') +
+  '</div>');
+});
+
+// docs
+if(DOCS.length){
+  out += node('Documents', '<div class="card" style="padding:16px">' + DOCS.map(d =>
+    '<a class="doc" href="' + esc(d.file) + '" target="_blank" rel="noopener">' +
+    '<i>PDF</i><span><strong>' + esc(d.title) + '</strong><em>' + esc(d.note) + '</em></span><s>&rarr;</s></a>'
+  ).join('') + '</div>');
+}
+
+// end
+out += node('End', '<div class="card">' +
+  '<h2>Want to see me build one live?</h2>' +
+  '<p style="margin-top:11px;font-size:14.5px">Give me a scenario and a sandbox sub account. I will build the workflow on a call.</p>' +
+  '<div class="actions">' +
+    '<a class="btn btn-primary" href="https://wa.me/' + ME.whatsapp.replace(/\D/g,'') + '">' + esc(ME.whatsapp) + '</a>' +
+    '<a class="btn btn-ghost" href="mailto:' + esc(ME.email) + '">' + esc(ME.email) + '</a>' +
+  '</div></div>', 'is-end end');
+
+document.getElementById('flow').innerHTML = out;
+</script>
+</body>
+</html>
