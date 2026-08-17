@@ -237,11 +237,15 @@ a:focus-visible,.doc:focus-visible{outline:2px solid var(--accent);outline-offse
 <script>
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-// paste any loom link, share or embed, it works
+// Loom aur Vimeo dono chalte hain
 function loomEmbed(url){
   if(!url || url.indexOf('PASTE_ID_HERE') > -1) return '';
-  const m = url.match(/loom\.com\/(?:share|embed)\/([a-zA-Z0-9]+)/);
-  return m ? 'https://www.loom.com/embed/' + m[1] : '';
+  url = url.trim();
+  let m = url.match(/loom\.com\/(?:share|embed)\/([a-zA-Z0-9]+)/);
+  if(m) return 'https://www.loom.com/embed/' + m[1];
+  m = url.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/([a-zA-Z0-9]+))?/);
+  if(m) return 'https://player.vimeo.com/video/' + m[1] + (m[2] ? '?h=' + m[2] : '');
+  return '';
 }
 
 function node(kind, html, cls){
